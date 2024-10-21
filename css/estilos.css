@@ -1,35 +1,38 @@
-body{
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+    margin-bottom: 20px;
+}
+
+body {
 
     background-image: url("https://img.freepik.com/free-vector/white-gold-hexagon-pattern-background_53876-100894.jpg?w=740&t=st=1729165921~exp=1729166521~hmac=45da08c860213088efd5a6527f1dc52079712648b7faf7c19bae131eb62b0008");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
-.container-fluid
-{    
-    border-color: rgb(218, 49, 209);
-    border-width: 1px;
-    border-style: solid;
-
-}
-
 
 .navbar {
     display: flex;
-    
+
 
     background-color: aquamarine;
     border-color: rgb(214, 16, 16);
     border-width: 1px;
     border-style: solid;
 }
-#box-presentacion{
+
+#box-presentacion {
 
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -38,20 +41,22 @@ body{
     border-style: solid;
     padding: 10px;
 }
-.titulo-seccion h2{
 
-    display:flex;
+.titulo-seccion h2 {
+
+    display: flex;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 15px;
-    padding-top:  20px;
+    padding-top: 20px;
     padding-bottom: 15px;
-    text-align: center;
+
 }
+
 .presentacion-titulo {
 
     display: flex;
-    width:  100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -59,6 +64,7 @@ body{
     border-width: 1px;
     border-style: solid;
 }
+
 .presentacion-texto {
 
     display: flex;
@@ -68,22 +74,24 @@ body{
     border-style: solid;
     padding: 5px;
 }
-.titulo-beneficio{
+
+.titulo-beneficio {
     display: flex;
 
 }
-.card-img-top{
+
+.card-img-top {
     align-self: center;
     height: 300px;
 }
 
 /* Card beneficios miel */
-#beneficios-miel{
+#beneficios-miel {
 
     display: flex;
-    
 }
-.tarjeta-circulo-body{
+
+.tarjeta-circulo-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +102,7 @@ body{
     padding-top: 5px;
     padding-bottom: 10px;
 }
+
 .imagen-circulo {
     width: 120px;
     height: 120px;
@@ -116,55 +125,61 @@ body{
     align-items: center;
 }
 
+.container p4 pb-0 {
+
+    background-color: aqua;
+
+}
 
 .example {
 
     padding: 20px;
-    
-    color: rgb(155, 75, 75);
-    
-    }
-    
-    /* Extra small devices (600px and down) */
-    
-    @media only screen and (max-width: 600px) {
-    
 
-        #beneficios-miel{
-            flex-wrap: wrap;
-        }
+    color: rgb(155, 75, 75);
+
+}
+
+/* Extra small devices (600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+
+    #beneficios-miel {
+        flex-wrap: wrap;
+    }
+
     /* .container-fluid {background: red;} */
-    
-    }
-    
-    /* Small devices (600px and up) */
-    
-    @media only screen and (min-width: 600px) {
-    
+
+}
+
+/* Small devices (600px and up) */
+
+@media only screen and (min-width: 600px) {
+
     /* .contacontainer-fluidiner {background: green;} */
-    
-    }
-    
-    /* Medium devices (768px and up) */
-    
-    @media only screen and (min-width: 768px) {
-    
+
+}
+
+/* Medium devices (768px and up) */
+
+@media only screen and (min-width: 768px) {
+
     /* .container-fluid {background: blue;} */
-    
-    }
-    
-    /* Large devices (992px and up) */
-    
-    @media only screen and (min-width: 992px) {
-    
+
+}
+
+/* Large devices (992px and up) */
+
+@media only screen and (min-width: 992px) {
+
     /* .container-fluid {background: orange;} */
-    
-    }
-    
-    /* Extra large devices (1200px and up) */
-    
-    @media only screen and (min-width: 1200px) {
-    
+
+}
+
+/* Extra large devices (1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
     /* .container-fluid {background: pink;} */
-    
-    }
+
+}
