@@ -11,6 +11,7 @@ p {
 
 body {
 
+    
     background-image: url("https://img.freepik.com/free-vector/white-gold-hexagon-pattern-background_53876-100894.jpg?w=740&t=st=1729165921~exp=1729166521~hmac=45da08c860213088efd5a6527f1dc52079712648b7faf7c19bae131eb62b0008");
     background-position: center;
     background-repeat: no-repeat;
@@ -19,30 +20,129 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Barar de inicio */
 .navbar {
     display: flex;
-
-
-    background-color: aquamarine;
-    border-color: rgb(214, 16, 16);
-    border-width: 1px;
-    border-style: solid;
+    background-color: rgb(109, 109, 104);
+    border-style:none;
 }
+.navbar-lista{
+    list-style: none;
+    display: flex   
+}
+.nav-item{
+    display: flex;
+    border: 1px solid rgb(247, 246, 246); /* Ajusta el grosor, estilo y color del borde */
+    padding: 10px; /* Espacio interno para mejorar el aspecto */
+    margin: 0.5px ; /* Espacio entre elementos */
 
-#box-presentacion {
+}
+.nav-link{
+    text-decoration: none;
+}
+/* fin barra inicio */
+
+/* contenedor general donde van TODAS LAS SECCIONES*/
+.container-general{
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    height: 100%;
-    border-color: rgb(74, 65, 199);
+    justify-items: center;
+    border-color: rgb(245, 7, 7);
     border-width: 1px;
     border-style: solid;
     padding: 10px;
 }
 
-.titulo-seccion h2 {
+#banner-principal{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(245, 7, 213);
+    border-width: 1px;
+    border-style: solid;    
+    width: 100%;
+}   
+
+#presentacion{
+
+    display: flex;
+    border-color: rgb(84, 160, 179);
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+}
+.box-titulo-seccion{
+
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    border-color: rgb(104, 30, 153);
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+}
+
+#productos{
+
+    display: flex;
+    border-color: rgb(84, 160, 179);
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+
+}
+#info-miel{
+
+    display: flex;
+
+    border-color: rgb(228, 38, 13);
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+   
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-color: rgb(84, 160, 179);
+    border-width: 1px;
+    border-style: solid;
+    width: 20%;
+}
+.card-img-arriba {
+    align-self: center;
+    height: 300px;
+}
+.card-cuerpo{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.card-title{
+
+    text-align: center;
+}
+.card-texto{
+
+    width: 100%;
+    text-align: center;;
+    
+}
+/* .titulo-seccion h2 {
 
     display: flex;
     justify-content: center;
@@ -51,9 +151,22 @@ body {
     padding-top: 20px;
     padding-bottom: 15px;
 
-}
+} */
+ /* .box-presentacion {
 
-.presentacion-titulo {
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    border-color: rgb(27, 160, 138);
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px; 
+} */
+
+/* .presentacion-titulo {
 
     display: flex;
     width: 100%;
@@ -63,8 +176,8 @@ body {
     border-color: rgb(74, 65, 199);
     border-width: 1px;
     border-style: solid;
-}
-
+} */
+/* 
 .presentacion-texto {
 
     display: flex;
@@ -74,6 +187,8 @@ body {
     border-style: solid;
     padding: 5px;
 }
+
+
 
 .titulo-beneficio {
     display: flex;
@@ -86,7 +201,7 @@ body {
 }
 
 /* Card beneficios miel */
-#beneficios-miel {
+/* #beneficios-miel {
 
     display: flex;
 }
@@ -107,14 +222,14 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-}
+} */
 
-#box-presentacion p {
+/* #box-presentacion p {
     background-color: aliceblue;
     text-align: center;
-}
+} */
 
-#banner-principal {
+/* #banner-principal {
     display: flex;
     width: 100%;
     padding-top: 1px;
@@ -123,30 +238,19 @@ body {
     border-style: solid;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.container p4 pb-0 {
 
-    background-color: aqua;
 
-}
-
-.example {
-
-    padding: 20px;
-
-    color: rgb(155, 75, 75);
-
-}
 
 /* Extra small devices (600px and down) */
 
 @media only screen and (max-width: 600px) {
 
 
-    #beneficios-miel {
+    /* #beneficios-miel {
         flex-wrap: wrap;
-    }
+    } */
 
     /* .container-fluid {background: red;} */
 

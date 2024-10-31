@@ -6,195 +6,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HONEY BEE</title>
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
-     <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <script src="/docs/5.3/assets/js/color-modes.js"></script>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-
-
-
-        
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="./js/app.js"></script>
 </head>
 
 <body>
-
     <section id="barra-navegacion-principal">
-        <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #f2c464">
-            <a class="navbar-brand" href="#">
-                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/quienes_somos.html">Quienes Somos</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar">
+            <ul class="navbar-lista">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/quienes_somos.html">Quienes Somos</a>
+                </li>
+            </ul>
         </nav>
     </section>
 
     <!-- Contenedor principal -->
-    <div class="container-fluid">
+    <div class="container-general">
         <section id="banner-principal">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100"
-                            src="https://picsum.photos/800/400?random=1"
-                            alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://picsum.photos/800/400?random=1" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://picsum.photos/800/400?random=3" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            <div id="banner-inicio" class="banner">
+                <img class="banner-imagen" alt="500x500"
+                src="https://cdn.pixabay.com/photo/2016/11/23/13/46/honey-1852934_640.jpg">
             </div>
         </section>
+
+        <!-- Seccion presentacion -->
         <section id="presentacion">
-            <div id="box-presentacion">
-                <h1 class="presentacion-titulo">BIENVENIDOS</h1>
-                <p class="presentacion-texto">Somos productores de miel pura de abejas, nuestra especialidad es obtener
+             <div class="box-titulo-seccion">
+                <h2 class="seccion-titulo">BIENVENIDOS</h2>
+                <p class="seccion-texto">Somos productores de miel pura de    abejas, nuestra especialidad es obtener
                     una miel de calidad, aportando el 100% de pureza a nuestros productos</p>
             </div>
         </section>
+
+
+
         <section id="productos">
-
-            <div class="titulo-seccion">
-                <h2 class="productos-titulo">NUESTROS PRODUCTOS</h2>
-                <p class="productos-texto">Somos productores de miel pura de abejas, nuestra especialidad es obtener
+            <div class="box-titulo-seccion">
+                <h2 class="seccion-titulo"">NUESTROS PRODUCTOS</h2>
+                <p class="seccion-texto">Somos productores de miel pura de     abejas, nuestra especialidad es obtener
                     una miel de calidad, aportando el 100% de pureza a nuestros productos</p>
             </div>
-
-            <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your
-                            mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod
-                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                        ac cursus
-                        commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                        src="https://cdn.pixabay.com/photo/2016/11/23/13/46/honey-1852934_640.jpg"
-                        data-holder-rendered="true" style="width: 500px; height: 500px;">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for
-                            yourself.</span>
-                    </h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod
-                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                        ac cursus
-                        commodo.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                        src="https://cdn.pixabay.com/photo/2014/10/28/20/40/honey-507147_640.jpg"
-                        data-holder-rendered="true" style="width: 500px; height: 500px;">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod
-                        semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-                        ac cursus
-                        commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                        src="https://cdn.pixabay.com/photo/2014/05/23/18/15/honey-352205_640.jpg"
-                        data-holder-rendered="true" style="width: 500px; height: 500px;">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
         </section>
+
+        
+        <hr class="divisor-principal">
+
+        <hr class="featurette-divider">
+
+
+        <div class="box-titulo-seccion">
+            <h2>Nuestra producción activa comienza...</h2>
+        </div>
         <section id="info-miel">
-            <div class="titulo-seccion">
-                <h2>Nuestra producción activa comienza...</h2>
-            </div>
-            <div class="card-group">
+
+
+            <div class="card-container">
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1550170139-ed6b5e6b4c38?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9uZXklMjBiZWV8ZW58MHx8MHx8fDA%3D"
-                        class="card-img-top" alt="img-nectar">
-                    <div class="card-body">
+                        class="card-img-arriba" alt="img-nectar">
+                    <div class="card-cuerpo">
                         <h5 class="card-title">1. La abeja recolecta el nectar</h5>
-                        <p class="card-text">En esta primer etapa la abeja sale de la colmena en busca de flores que le
+                        <p class="card-texto">En esta primer etapa la abeja sale de la colmena en busca de flores que le
                             aporten nectar</p>
                         <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
                     </div>
                 </div>
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1504392022767-a8fc0771f239?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZXklMjBiZWV8ZW58MHx8MHx8fDA%3D"
-                        class="card-img-top" alt="img-tranferencia-polen">
-                    <div class="card-body">
+                        class="card-img-arriba" alt="img-tranferencia-polen">
+                    <div class="card-cuerpo">
                         <h5 class="card-title">2. Transferencia del polen</h5>
-                        <p class="card-text">En su busqueda de alimento, la abeja comienza a transportar polen a las
+                        <p class="card-texto">En su busqueda de alimento, la abeja comienza a transportar polen a las
                             diferentes plantas a las cuales visita, realzando el proceso denominado polinización lo que
                             permite que las plantas comiencen su proceso de fecundación</p>
                         <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
@@ -202,19 +95,19 @@
                 </div>
                 <div class="card">
                     <img src="https://plus.unsplash.com/premium_photo-1664299221603-06f183a6a226?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9uZXklMjBiZWV8ZW58MHx8MHx8fDA%3D"
-                        class="card-img-top" alt="img-creacion">
-                    <div class="card-body">
+                        class="card-img-arriba" alt="img-creacion">
+                    <div class="card-cuerpo">
                         <h5 class="card-title">3. Creación de la miel</h5>
-                        <p class="card-text">En esta etapa la colmena comienza a producir la miel, usando como materia
+                        <p class="card-texto">En esta etapa la colmena comienza a producir la miel, usando como materia
                             prima el polen recolectado.</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="https://plus.unsplash.com/premium_photo-1664299207508-2dd2b19d8bb9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvbmV5JTIwYmVlfGVufDB8fDB8fHww"
-                        class="card-img-top" alt="img-recolecta">
-                    <div class="card-body">
+                        class="card-img-arriba" alt="img-recolecta">
+                    <div class="card-cuerpo">
                         <h5 class="card-title">4. Recolección de la miel</h5>
-                        <p class="card-text">Aquí se realiza la recolección manual de la producción hecha por la
+                        <p class="card-texto">Aquí se realiza la recolección manual de la producción hecha por la
                             colmena, con procesos donde se cuida a la colmena y el ecosistema, para que siga su curso
                             natural.</p>
                     </div>
@@ -268,101 +161,8 @@
             </div>
         </section>
     </div>
+</body>
+<footer></footer>
 
-    <footer class="text-center text-lg-start text-white" style="background-color: #242527">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Links -->
-            <section class="">
-                <!--Grid row-->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
-                            Cómo llegar?
-                        </h6>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6534.590380365281!2d-58.41829596290587!3d-35.024344455353216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2da71a3b65fd%3A0x4caffd42940be4c5!2sSan%20Vicente%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1729194623717!5m2!1ses!2sar"
-                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
-                        <p>
-                            <a class="text-white">MDBootstrap</a>
-                        </p>
-                        <p>
-                            <a class="text-white">MDWordPress</a>
-                        </p>
-                        <p>
-                            <a class="text-white">BrandFlow</a>
-                        </p>
-                        <p>
-                            <a class="text-white">Bootstrap Angular</a>
-                        </p>
-                    </div> -->
-                    <!-- Grid column -->
-<!-- 
-                    <hr class="w-100 clearfix d-md-none" /> -->
-
-                    <!-- Grid column -->
-
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                        <p><i class="fas fa-home mr-3"></i> San Vicente, Presidente Perón 10012, Argentina</p>
-                        <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-                    </div>
-                    <!-- Grid column -->
-                    <hr class="w-100 clearfix d-md-none" />
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold"> Seguínos en Redes</h6>
-
-                        <!-- Facebook -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
-                            role="button"><i class="fab fa-facebook-f"></i></a>
-
-                        <!-- Twitter -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
-                            role="button"><i class="fab fa-twitter"></i></a>
-
-                        <!-- Google -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
-                            role="button"><i class="fab fa-google"></i></a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
-                            role="button"><i class="fab fa-instagram"></i></a>
-
-                        <!-- Linkedin -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
-                            role="button"><i class="fab fa-linkedin-in"></i></a>
-                        <!-- Github -->
-                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
-                            role="button"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
-        </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
 
 </html>
