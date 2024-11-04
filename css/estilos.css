@@ -58,15 +58,27 @@ body {
 
 #banner-principal{
     display: flex;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: rgb(24, 23, 23);
     border-color: rgb(245, 7, 213);
     border-width: 1px;
     border-style: solid;    
     width: 100%;
+    justify-content: center;
 }   
+#banner-inicio{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner-imagen{
+    padding-top:  60px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+    width: 50%;
+
+}
 #presentacion{
 
     display: flex;
@@ -181,43 +193,119 @@ body {
       "thumb1 thumb2"
       "thumb3 thumb4";
     grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-  }
+    padding: 10px;
+    border-color: rgb(74, 65, 199);
+    border-width: 1px;
+    border-style: solid;
+    align-content: center;
+    
+}
   
   .product-main {
     grid-area: main;
-  }
-  
+    border-color: rgb(199, 65, 177);
+    border-width: 1px;
+    border-style: solid;
+    justify-self: center;
+    width: 70%;
+}
+
   .product-thumbnail:nth-child(2) { grid-area: thumb1; }
   .product-thumbnail:nth-child(3) { grid-area: thumb2; }
   .product-thumbnail:nth-child(4) { grid-area: thumb3; }
   .product-thumbnail:nth-child(5) { grid-area: thumb4; }
   
   .product-gallery img {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para cada imagen */
+    object-fit: cover;
+  }  
+  .product-gallery video {
+    align-self: center;
     width: 100%;
     height: auto;
     border-radius: 8px; /* Bordes redondeados para cada imagen */
     object-fit: cover;
   }
+  .footer{
+
+    background-color: rgb(53, 50, 50);
+    color: rgb(234, 239, 243);
+
+  }
+  
   .container-footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border-color: rgb(122, 179, 84);
+    height: 400%;
+    border-color: rgb(230, 233, 37);
     border-width: 1px;
     border-style: solid;
   }
   #caja-footer{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     flex: 1 1 200px; /* Permite que la tarjeta se redimensione, con un tamaño mínimo de 300px */
-    border-color: rgb(122, 179, 84);
+    padding-top: 5px;
+    border-color: rgb(23, 25, 156);
     border-width: 1px;
     border-style: solid;
+    margin-bottom: 10px;
+  }
+  #maps-google{
+    
+    width: 70%;
+    height: 400px;
+    border-color: rgb(13, 13, 14);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10%;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+  #caja-footer h2 {
+
+    font-size: 120%;
+    font-weight:bold;
+    padding: 10px;
+    color:rgb(255, 255, 255);
+  }
+  #caja-footer ul, li,a{
+    padding: 5px;
+    list-style-type: none;
+    color: rgb(234, 239, 243);
+
+
+  }
+  #logo-footer{
+    width: 50%;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  #redes{
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  #redes-list i{
+
+    padding: 10px; /* Espacio interno dentro de cada elemento */
+    margin-bottom: 5px;
+    font-size: 1.5em; /* 1.5 veces el tamaño de fuente del elemento padre */
   }
 
-
-
-
-
+  .line-separator {
+    border: none;
+    border-top: 1px solid #ffffff; /* Color y grosor de la línea */
+    width: 80%; /* Ancho de la línea */
+    margin: 10px auto; /* Espacio y centrado */
+}
 
 
 
