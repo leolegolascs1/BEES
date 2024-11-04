@@ -11,7 +11,6 @@ p {
 
 body {
 
-    
     background-image: url("https://img.freepik.com/free-vector/white-gold-hexagon-pattern-background_53876-100894.jpg?w=740&t=st=1729165921~exp=1729166521~hmac=45da08c860213088efd5a6527f1dc52079712648b7faf7c19bae131eb62b0008");
     background-position: center;
     background-repeat: no-repeat;
@@ -23,8 +22,10 @@ body {
 /* Barar de inicio */
 .navbar {
     display: flex;
+    width: 100%;
     background-color: rgb(109, 109, 104);
     border-style:none;
+    position: fixed; /* Hace que la barra esté fija en la pantalla */
 }
 .navbar-lista{
     list-style: none;
@@ -105,107 +106,60 @@ body {
 }
 .card-container{
     display: flex;
-    flex-direction: row;
-    padding:10px;
     flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-    gap: 10px;
-   
+    padding:10px;
+    gap:10px;
+    border-color: rgb(228, 38, 13);
+    border-width: 1px;
+    border-style: solid;
 }
 .card{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
-    border-color: rgb(84, 160, 179);
+    flex: 1 1 200px; /* Permite que la tarjeta se redimensione, con un tamaño mínimo de 300px */
+    border-color: rgb(161, 29, 150);
     border-width: 1px;
     border-style: solid;
-    width: 20%;
+    width: 80%;
 }
 .card-img-arriba {
+
+    display: flex;
+    flex-wrap: nowrap;
     align-self: center;
-    height: 300px;
+    max-width: 90%;
+    max-height: 250px;
+
 }
 .card-cuerpo{
 
     display: flex;
     flex-direction: column;
-
+    flex-wrap:  nowrap;
+    align-items: center;
+    border-color: rgb(122, 179, 84);
+    border-width: 1px;
+    border-style: solid;
 }
 .card-title{
-
+    padding: 10px;
     text-align: center;
 }
 .card-texto{
 
-    width: 100%;
-    text-align: center;;
+    width: 90%;
+    text-align: center;
     
 }
-/* .titulo-seccion h2 {
 
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-
-} */
- /* .box-presentacion {
-
-    display: flex;    
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-
-    border-color: rgb(27, 160, 138);
-    border-width: 1px;
-    border-style: solid;
-    padding: 10px; 
-} */
-
-/* .presentacion-titulo {
-
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-color: rgb(74, 65, 199);
-    border-width: 1px;
-    border-style: solid;
-} */
-/* 
-.presentacion-texto {
-
-    display: flex;
-    flex-wrap: wrap;
-    border-color: rgb(74, 65, 199);
-    border-width: 1px;
-    border-style: solid;
-    padding: 5px;
-}
-
-
-
-.titulo-beneficio {
-    display: flex;
-
-}
-
-.card-img-top {
-    align-self: center;
-    height: 300px;
-}
-
-/* Card beneficios miel */
-/* #beneficios-miel {
-
-    display: flex;
-}
-
+.imagen-circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
 .tarjeta-circulo-body {
     display: flex;
     flex-direction: column;
@@ -218,27 +172,94 @@ body {
     padding-bottom: 10px;
 }
 
-.imagen-circulo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-} */
 
-/* #box-presentacion p {
-    background-color: aliceblue;
-    text-align: center;
-} */
-
-/* #banner-principal {
-    display: flex;
+.product-gallery {
+    display: grid;
+    gap: 10px; /* Espacio entre imágenes */
+    grid-template-areas: 
+      "main main"
+      "thumb1 thumb2"
+      "thumb3 thumb4";
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  }
+  
+  .product-main {
+    grid-area: main;
+  }
+  
+  .product-thumbnail:nth-child(2) { grid-area: thumb1; }
+  .product-thumbnail:nth-child(3) { grid-area: thumb2; }
+  .product-thumbnail:nth-child(4) { grid-area: thumb3; }
+  .product-thumbnail:nth-child(5) { grid-area: thumb4; }
+  
+  .product-gallery img {
     width: 100%;
-    padding-top: 1px;
-    border-color: rgb(74, 65, 199);
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para cada imagen */
+    object-fit: cover;
+  }
+  .container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-color: rgb(122, 179, 84);
     border-width: 1px;
     border-style: solid;
-    justify-content: center;
-    align-items: center;
-} */
+  }
+  #caja-footer{
+    display: flex;
+    flex: 1 1 200px; /* Permite que la tarjeta se redimensione, con un tamaño mínimo de 300px */
+    border-color: rgb(122, 179, 84);
+    border-width: 1px;
+    border-style: solid;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Ajustes para pantallas más grandes */
+  @media (min-width: 768px) {
+    .product-gallery {
+      grid-template-areas: 
+        "main main thumb1 thumb2"
+        "main main thumb3 thumb4";
+      grid-template-columns: 2fr 1fr 1fr 1fr; /* Imagen principal más grande */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -247,7 +268,10 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+     } /* Centrar las tarjetas en pantallas pequeñas */
     /* #beneficios-miel {
         flex-wrap: wrap;
     } */
