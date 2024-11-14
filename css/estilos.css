@@ -1,4 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
 /*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+
 * {
     padding: 0;
     margin: 0;
@@ -16,140 +21,497 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 120%;
 }
 
+/* Barar de inicio */
 .navbar {
     display: flex;
-
-
-    background-color: aquamarine;
-    border-color: rgb(214, 16, 16);
-    border-width: 1px;
-    border-style: solid;
+    width: 100%;
+    background-color: rgb(109, 109, 104);
+    background: linear-gradient(rgb(20, 20, 20), rgb(82, 78, 79));
+    border-style:none;
+    position: fixed; /* Hace que la barra esté fija en la pantalla */
 }
+.navbar-lista{
+    list-style: none;
+    display: flex   
+}
+.nav-item{
+    display: flex;
+    border: 1px solid rgb(247, 246, 246); /* Ajusta el grosor, estilo y color del borde */
+    padding: 10px; /* Espacio interno para mejorar el aspecto */
+    margin: 0.5px ; /* Espacio entre elementos */
 
-#box-presentacion {
+}
+.nav-link{
+    text-decoration: none;
+}
+/* fin barra inicio */
+
+/* contenedor general donde van TODAS LAS SECCIONES*/
+.container-general{
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    height: 100%;
-    border-color: rgb(74, 65, 199);
+    justify-items: center;
+    /* border-color: rgb(245, 7, 7);
     border-width: 1px;
-    border-style: solid;
+    border-style: solid; */
     padding: 10px;
 }
 
-.titulo-seccion h2 {
-
+#banner-principal{
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-
-}
-
-.presentacion-titulo {
-
-    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(24, 23, 23);
+    /* border-color: rgb(245, 7, 213);
+    border-width: 1px; */
+    border-style: solid;    
     width: 100%;
+    justify-content: center;
+}   
+#banner-inicio{
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    border-color: rgb(74, 65, 199);
-    border-width: 1px;
-    border-style: solid;
 }
+#banner-imagen{
+    padding-top:  60px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+    width: 50%;
 
-.presentacion-texto {
+}
+#presentacion{
 
     display: flex;
-    flex-wrap: wrap;
-    border-color: rgb(74, 65, 199);
+    /* border-color: rgb(84, 160, 179);
     border-width: 1px;
-    border-style: solid;
-    padding: 5px;
+    border-style: solid; */
+    width: 100%;
+}
+.box-titulo-seccion{
+
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    background-color: #dbba8f;
+    /* border-color: rgb(104, 30, 153);
+    border-width: 1px;
+    border-style: solid; */
+    width: 100%;
 }
 
-.titulo-beneficio {
+#productos{
+
+    display: flex;
+    /* border-color: rgb(84, 160, 179);
+    border-width: 1px;
+    border-style: solid; */
+    background: linear-gradient(rgb(250, 240, 240), rgb(187, 175, 178));
+    width: 100%;
+
+}
+#info-miel{
+
     display: flex;
 
+    /* border-color: rgb(228, 38, 13);
+    border-width: 1px;
+    border-style: solid; */
+    width: 100%;
 }
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+    gap:10px;
+    /* border-color: rgb(228, 38, 13);
+    border-width: 1px;
+    border-style: solid; */
+}
+.card{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1 1 200px; /* Permite que la tarjeta se redimensione, con un tamaño mínimo de 300px */
+    /* border-color: rgb(161, 29, 150);
+    border-width: 1px;
+    border-style: solid; */
+    width: 80%;
+}
+.card-img-arriba {
 
-.card-img-top {
+    display: flex;
+    flex-wrap: nowrap;
     align-self: center;
-    height: 300px;
+    max-width: 90%;
+    max-height: 250px;
+
 }
+.card-cuerpo{
 
-/* Card beneficios miel */
-#beneficios-miel {
-
-    display: flex;
-}
-
-.tarjeta-circulo-body {
     display: flex;
     flex-direction: column;
+    flex-wrap:  nowrap;
     align-items: center;
-    border-color: rgb(74, 65, 199);
+    background-color: #fbfbfb;
+    /* border-color: rgb(122, 179, 84);
     border-width: 1px;
-    border-style: solid;
+    border-style: solid; */
+}
+.card-title{
+    padding: 10px;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 10px;
+}
+.card-texto{
+
+    width: 90%;
+    text-align: center;
+    
 }
 
 .imagen-circulo {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-}
-
-#box-presentacion p {
-    background-color: aliceblue;
-    text-align: center;
-}
-
-#banner-principal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+.tarjeta-circulo-body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-color: rgb(74, 65, 199);
+    border-width: 1px;
+    border-style: solid; */
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: #fbfbfb;
+}
+
+
+.product-gallery {
+    display: grid;
+    gap: 10px; /* Espacio entre imágenes */
+    grid-template-areas: 
+      "main main"
+      "thumb1 thumb2"
+      "thumb3 thumb4";
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    padding: 10px;
+    /* border-color: rgb(74, 65, 199);
+    border-width: 1px;
+    border-style: solid; */
+    align-content: center;
+
+    
+}
+  
+  .product-main {
+    grid-area: main;
+    /* border-color: rgb(199, 65, 177);
+    border-width: 1px;
+    border-style: solid; */
+    justify-self: center;
+    width: 70%;
+}
+
+  .product-thumbnail:nth-child(2) { grid-area: thumb1; }
+  .product-thumbnail:nth-child(3) { grid-area: thumb2; }
+  .product-thumbnail:nth-child(4) { grid-area: thumb3; }
+  .product-thumbnail:nth-child(5) { grid-area: thumb4; }
+  
+  .product-gallery img {
+    align-self: center;
     width: 100%;
-    padding-top: 1px;
-    border-color: rgb(74, 65, 199);
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para cada imagen */
+    object-fit: cover;
+  }  
+  .product-gallery video {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para cada imagen */
+    object-fit: cover;
+  }
+  .footer{
+
+    background-color: rgb(53, 50, 50);
+    color: rgb(234, 239, 243);
+
+  }
+  
+  .container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400%;
+    /* border-color: rgb(230, 233, 37);
+    border-width: 1px;
+    border-style: solid; */
+  }
+  #caja-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 200px; /* Permite que la tarjeta se redimensione, con un tamaño mínimo de 300px */
+    padding-top: 5px;
+    /* border-color: rgb(23, 25, 156);
+    border-width: 1px;
+    border-style: solid; */
+    margin-bottom: 10px;
+  }
+  #maps-google{
+    
+    width: 70%;
+    height: 400px;
+    border-color: rgb(13, 13, 14);
     border-width: 1px;
     border-style: solid;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10%;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+  #caja-footer h2 {
+
+    font-size: 120%;
+    font-weight:bold;
+    padding: 10px;
+    color:rgb(255, 255, 255);
+  }
+  #caja-footer ul, li,a{
+    padding: 5px;
+    list-style-type: none;
+    color: rgb(234, 239, 243);
+
+
+  }
+  #logo-footer{
+    width: 50%;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  #redes{
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  #redes-list i{
+
+    padding: 10px; /* Espacio interno dentro de cada elemento */
+    margin-bottom: 5px;
+    font-size: 1.5em; /* 1.5 veces el tamaño de fuente del elemento padre */
+  }
+
+  .line-separator {
+    border: none;
+    border-top: 1px solid #ffffff; /* Color y grosor de la línea */
+    width: 80%; /* Ancho de la línea */
+    margin: 10px auto; /* Espacio y centrado */
 }
 
-.container p4 pb-0 {
 
-    background-color: aqua;
+/* FORMULARIO DE CONTACTO ESTILOS */
 
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+/* body{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+  background-color: #ab4493; 
+} */
+
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
 }
 
-.example {
 
-    padding: 20px;
-
-    color: rgb(155, 75, 75);
-
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #0a0a0a; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
 }
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #070707; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #f0ac54; 
+	border-color: #343530; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: #1b191b; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #fa7c07;
+}
+
+
+h3{
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Ajustes para pantallas más grandes */
+  @media (min-width: 768px) {
+    .product-gallery {
+      grid-template-areas: 
+        "main main thumb1 thumb2"
+        "main main thumb3 thumb4";
+      grid-template-columns: 2fr 1fr 1fr 1fr; /* Imagen principal más grande */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Extra small devices (600px and down) */
 
 @media only screen and (max-width: 600px) {
 
-
-    #beneficios-miel {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+     } /* Centrar las tarjetas en pantallas pequeñas */
+    /* #beneficios-miel {
         flex-wrap: wrap;
-    }
+    } */
 
     /* .container-fluid {background: red;} */
-
+     .container-footer{
+      flex-direction: column;
+      align-items: center;
+     }
 }
 
 /* Small devices (600px and up) */
