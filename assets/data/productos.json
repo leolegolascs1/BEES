@@ -1,0 +1,244 @@
+[
+    {
+        "Id": "1",
+        "Nombre": "Budinera Morella",
+        "Descripcion": "Bandejita budinera 25x12cm esmaltada. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 24.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+            "../assets/img/productos/budinera_morella_01.jpg",
+            "../assets/img/productos/budinera_morella_01.jpg",
+            "../assets/img/productos/budinera_morella_01.jpg",
+            "../assets/img/productos/budinera_morella_01.jpg"
+        ]
+    },
+    {
+        "Id": "2",
+        "Nombre": "Cazuela Bigo",
+        "Descripcion": "Cazuela con asas 12cm esmaltada. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 18.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+            "../assets/img/productos/cazuela_bigo_01.jpg",
+             "../assets/img/productos/cazuela_bigo_01.jpg",
+             "../assets/img/productos/cazuela_bigo_02.jpg",
+             "../assets/img/productos/cazuela_bigo_02.jpg"
+        ]
+    },
+    {
+        "Id": "3",
+        "Nombre": "Ensaladera XL",
+        "Descripcion": "Bowl 30cm decorado con engobes y esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 32.000,00 ",
+        "Disponible": 0,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+    },
+    {
+        "Id": "4",
+        "Nombre": "Ensaladera L",
+        "Descripcion": "Bowl 25cm decorado con engobes y esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 28.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+
+        ]
+    },
+    {
+        "Id": "5",
+        "Nombre": "Ensaladera M",
+        "Descripcion": "Bowl 20cm decorado con engobes y esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 25.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+    },
+    {
+        "Id": "6",
+        "Nombre": "Ensaladera S",
+        "Descripcion": "Bowl 16cm decorado con engobes y esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 20.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+    },
+    {
+        "Id": "7",
+        "Nombre": "Aros Amapola",
+        "Descripcion": "Par de aros en gres, esmaltados.",
+        "Categoría": "Joyería",
+        "Precio": " $ 15.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+             "../assets/img/productos/aros_amapola_01.jpg",
+              "../assets/img/productos/aros_amapola_01.jpg",
+              "../assets/img/productos/aros_amapola_02.jpg",
+              "../assets/img/productos/aros_amapola_02.jpg"
+        ]
+    },
+    {
+        "Id": "8",
+        "Nombre": "Jarra Mora",
+        "Descripcion": "Jarra 1.5L esmaltada. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 45.000,00 ",
+        "Imagenes": [
+            "../assets/img/productos/jarra_mora_01.jpg",
+            "../assets/img/productos/jarra_mora_01.jpg",
+            "../assets/img/productos/jarra_mora_01.jpg",
+            "../assets/img/productos/jarra_mora_01.jpg"
+        ]
+    },
+    {
+        "Id": "9",
+        "Nombre": "Mate bolita",
+        "Descripcion": "Mate bolita. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 18.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+             "../assets/img/productos/mate_bolita_01.jpg",
+             "../assets/img/productos/mate_bolita_02.jpg",
+             "../assets/img/productos/mate_bolita_03.jpg",
+             "../assets/img/productos/mate_bolita_04.jpg"
+        ]
+    },
+    {
+        "Id": "10",
+        "Nombre": "Platito Peky",
+        "Descripcion": "Platito con palabras cruzadas 12x12 esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 15.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+             "../assets/img/productos/platito_peky_01.jpg",
+             "../assets/img/productos/platito_peky_02.jpg",
+             "../assets/img/productos/platito_peky_03.jpg",
+             "../assets/img/productos/platito_peky_04.jpg",
+             "../assets/img/productos/platito_peky_05.jpg"
+        ]
+    },
+    {
+        "Id": "11",
+        "Nombre": "Jarro Martita",
+        "Descripcion": "Taza tipo jarrito 7,5 cm de alto - 8 cm de ancho (ideal para mate). Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 16.000,00 ",
+        "Disponible": 1,
+        "Imagenes": [
+            "../assets/img/productos/jarro_martita_02.jpg",
+            "../assets/img/productos/jarro_martita_01.jpg"
+        ]
+    },
+    {
+        "Id": "12",
+        "Nombre": "Tazón Barto",
+        "Descripcion": "Tazón esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 22.000,00",
+        "Disponible": 0,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+    },
+    {
+        "Id": "13",
+        "Nombre": "Cerealero Tupac",
+        "Descripcion": "Cuenco pequeño decorado con técnica de shibori, esmaltado. Apto utilitario, horno y microondas.",
+        "Categoría": "Utilitario",
+        "Precio": " $ 22.000,00",
+        "Disponible": 0,
+        "Imagenes": [
+            "../assets/img/productos/cerealero_tupac_06.jpg",
+            "../assets/img/productos/cerealero_tupac_05.jpg",
+            "../assets/img/productos/cerealero_tupac_04.jpg",
+            "../assets/img/productos/cerealero_tupac_03.jpg",
+            "../assets/img/productos/cerealero_tupac_02.jpg",
+            "../assets/img/productos/cerealero_tupac_01.jpg"
+            
+        ]
+    },
+    {
+        "Id": "14",
+        "Nombre": "Kit QueSea en casa",
+        "Descripcion": "Incluye: 2 kilos de arcilla, engobes (2 colores a elección), barbotina (para ensamblar), 1 lanceta, 1 punzón, 2 pinceles, 1 esponja, dispositivo de tanza para corte, un cuadernillo con imágenes de referencia, primera horneada de las piezas. Además podrás escribirnos para consultarnos si tenes dudas durante el proceso",
+        "Categoría": "Insumos",
+        "Precio": " $ 25.000,00",
+        "Disponible": 1,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+    },
+    {
+        "Id": "15",
+        "Nombre": "Clases regulares",
+        "Descripcion": "Taller grupal una vez por semana, con encuentros de 2 horas. Todos los materiales, insumos, herramientas y horneadas están incluidas. Tenemos cupos de hasta 8 personas por grupo para poder brindar una experiencia más personalizada y armoniosa. No hace falta experiencia previa, todos los niveles son bienvenidos. ¡Consultá por los días y horarios disponibles sin compromiso!",
+        "Categoría": "Taller",
+        "Precio": "$35.000",
+        "Disponible": 0,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+
+    },
+    {
+        "Id": "16",
+        "Nombre": "Evento QueSea itinerante",
+        "Descripcion": "Te ofrecemos la experiencia de construir una pieza en arcilla con los invitados que vos quieras! Nos adaptamos según tus deseos y necesidades. Podemos recibirte en nuestro taller o a domicilio. Nos ocupamos de la organización, planificación, materiales y horneadas.",
+        "Categoría": "Taller",
+        "Precio": "Precio a convenir",
+        "Disponible": 1,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=15"
+        ]
+
+    },
+    {
+        "Id": "17",
+        "Nombre": "Voucher regalo",
+        "Descripcion": "Incluye: 2 kilos de arcilla, engobes (2 colores a elección), barbotina (para ensamblar), 1 lanceta, 1 punzón, 2 pinceles, 1 esponja, dispositivo de tanza para corte, un cuadernillo con imágenes de referencia, primera horneada de las piezas. Además podrás escribirnos para consultarnos si tenes dudas durante el proceso",
+        "Categoría": "Gift",
+        "Precio": "Precio a convernir",
+        "Disponible": 1,
+        "Imagenes": [
+            "https://picsum.photos/300/200?random=15",
+            "https://picsum.photos/300/200?random=16",
+            "https://picsum.photos/300/200?random=17",
+            "https://picsum.photos/300/200?random=18"
+        ]
+    }
+]

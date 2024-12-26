@@ -320,6 +320,16 @@ body {
 }
 
 
+/*FORMULARIO CATALOGO VENTA*/
+
+.container-productos-venta{
+
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+padding-bottom: 10%;
+}
+
 /* FORMULARIO DE CONTACTO ESTILOS */
 
 /* Importación de fuentes de google fonts */ 
@@ -391,7 +401,7 @@ button{
 	border-color: #343530; 
 	border-style: solid; 
 	border-radius: 10px;	
-	width: 420px;   
+	width: 100%;   
   cursor: pointer;
 }
 
