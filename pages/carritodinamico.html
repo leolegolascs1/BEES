@@ -23,35 +23,43 @@
             <nav class="navbar">
                 <ul class="navbar-lista">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="../pages/carritodinamico.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./quienes_somos.html">Quienes Somos</a>
+                        <a class="nav-link" href="../pages/quienes_somos.html">Quienes Somos</a>
                     </li>
                 </ul>
             </nav>
         </section>
     </header>
     <main>
-        <h1>Nuestros Productos</h1>
+
         <div class="container-productos-venta">
+            <h1>Nuestros Productos</h1>
             <div class="row">
                 <!-- Elementos generados a partir del JSON -->
                 <main id="items" class="col-sm-8 row"></main>
                 <!-- Carrito -->
                 <aside class="col-sm-4">
-                    <h2>Carrito</h2>
+                    <div class="header-carrito">
+                        <h2 class="titulo-carrito">Mi Carrito</h2> 
+                    </div>
+            
                     <ul id="carrito" class="list-group"></ul>
                     <hr>
                     <p class="text-right">Total $: <span id="total"></span>;</p>
-                    <button id="boton-pagar" class="btn btn-primary mt-3">Pagar</button>
-                    <button id="boton-vaciar" class="btn btn-danger mt-3">Vaciar</button>
+                    
+                    <div class="controles-carrito">
+                        <button id="boton-pagar" class="btn btn-primary mt-3">Pagar</button>
+                        <button id="boton-vaciar" class="btn btn-danger mt-3">Vaciar</button>
+                    </div>
+
                 </aside>
             </div>
         </div>
@@ -72,7 +80,7 @@
                 <h2>Nuetras redes</h2>
 
                 <hr class="line-separator">
-                <img id="logo-footer" src="img/honeybee-black.webp"> </img>
+                <img id="logo-footer" src="../assets/img/honeybee-black.webp"> </img>
                 <div id="redes">
                     <ul id="redes-list">
 

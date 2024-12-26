@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Variables
     let baseDeDatos = [
-        { id: 1, nombre: 'Miel Pura x 500g.', precio: 1500, imagen: '../assets/img/manzanas.png' },
-        { id: 2, nombre: 'Miel Pura x 1Kg.', precio: 1200, imagen: '../assets/img/cebolla.jpg' },
-        { id: 3, nombre: 'Caramelos de Miel x 10', precio: 2100, imagen: '../assets/img/frutilla.jpg' },
-        { id: 4, nombre: 'Taza Térmica-400ml', precio: 1800, imagen: '../assets/img/papa.jpg' }
+        { id: 1, nombre: 'Miel Pura x 500g.', precio: 1500, imagen: 'https://dcdn.mitiendanube.com/stores/003/942/787/products/miel-f6c8c0060f7f71d8dd17123389017533-1024-1024.png'},
+        { id: 2, nombre: 'Miel Pura x 1Kg.', precio: 1200, imagen: 'https://dcdn.mitiendanube.com/stores/003/942/787/products/miel-f6c8c0060f7f71d8dd17123389017533-1024-1024.png' },
+        { id: 3, nombre: 'Caramelos de Miel x 10', precio: 2100, imagen: 'https://www.okrecetas.com/recetas-de-reposteria/img600/caramelos-miel.jpg' },
+        { id: 4, nombre: 'Taza Térmica-400ml', precio: 1800, imagen: 'https://i.etsystatic.com/23353370/r/il/2ac323/3140399235/il_570xN.3140399235_sknp.jpg' }
     ];
 
     let carrito = [];
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-success', 'mt-auto');
-            miNodoBoton.textContent = 'Compar';
+            miNodoBoton.textContent = 'Comprar';
             miNodoBoton.setAttribute('marcador', info.id);
             miNodoBoton.addEventListener('click', agregarProductoAlCarrito);
     

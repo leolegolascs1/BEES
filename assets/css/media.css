@@ -1,0 +1,61 @@
+  /* Ajustes para pantallas más grandes */
+  @media (min-width: 768px) {
+    .product-gallery {
+      grid-template-areas: 
+        "main main thumb1 thumb2"
+        "main main thumb3 thumb4";
+      grid-template-columns: 2fr 1fr 1fr 1fr; /* Imagen principal más grande */
+    }
+  }
+
+
+/* Extra small devices (600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+     } /* Centrar las tarjetas en pantallas pequeñas */
+    /* #beneficios-miel {
+        flex-wrap: wrap;
+    } */
+
+    /* .container-fluid {background: red;} */
+     .container-footer{
+      flex-direction: column;
+      align-items: center;
+     }
+}
+
+/* Small devices (600px and up) */
+
+@media only screen and (min-width: 600px) {
+
+    /* .contacontainer-fluidiner {background: green;} */
+
+}
+
+/* Medium devices (768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+    /* .container-fluid {background: blue;} */
+
+}
+
+/* Large devices (992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+    /* .container-fluid {background: orange;} */
+
+}
+
+/* Extra large devices (1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+    /* .container-fluid {background: pink;} */
+
+}
