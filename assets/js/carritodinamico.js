@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, nombre: 'Taza Térmica-400ml', precio: 1800, imagen: 'https://i.etsystatic.com/23353370/r/il/2ac323/3140399235/il_570xN.3140399235_sknp.jpg' }
     ];
 
+
     let carrito = [];
     const moneda = '$';
     const DOMitems = document.querySelector('#items');
@@ -55,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-
     function agregarProductoAlCarrito(evento) {
         carrito.push(parseInt(evento.target.getAttribute('marcador')));
         renderizarCarrito();
