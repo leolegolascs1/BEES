@@ -337,13 +337,6 @@ padding-bottom: 10%;
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
 
-/* body{
-	height: 100%; 
-	font-family: 'Noto Sans', sans-serif;
-  background-color: #ab4493; 
-} */
-
-
 .contact_form{	
 	width: 460px; 
   height: auto;
@@ -355,7 +348,13 @@ padding-bottom: 10%;
   padding-left: 30px; 
 }
 
+.btn-primary{
+  justify-self: center;
+  width: 95%;
+  border-radius: 3%;
+  background-color:  #f0ac54; ;
 
+}
 input{
 	background-color: #fbfbfb; 
 	width: 408px; 
@@ -505,9 +504,35 @@ p{
 
 }
 
+/* ESTILOS NOSOTROS */
 
+.box-texto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f1eae3;
+  width: 80%;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+.box-texto p{
+  padding-top: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.box-texto img{
 
-
+  width: 70%;
+}
+.box-texto-narracion{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+align-items: center;
+  justify-content: center;
+}
 
 
 

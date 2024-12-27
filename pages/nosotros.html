@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Carrito de Compras</title>
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <script src="./js/app.js"></script>
     <script src="https://kit.fontawesome.com/9255801f03.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Nosotros</title>
 </head>
 
 <body>
@@ -26,43 +22,53 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/carritodinamico.html">Productos</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/quienes_somos.html">Quienes Somos</a>
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
                     </li>
                 </ul>
             </nav>
         </section>
     </header>
     <main>
-
-        <div class="container-productos-venta">
-            <h1>Nuestros Productos</h1>
-            <div class="row">
-                <!-- Elementos generados a partir del JSON -->
-                <main id="items" class="col-sm-8 row"></main>
-                <!-- Carrito -->
-                <aside class="col-sm-4">
-                    <div class="header-carrito">
-                        <h2 class="titulo-carrito">Mi Carrito</h2> 
-                    </div>
-            
-                    <ul id="carrito" class="list-group"></ul>
-                    <hr>
-                    <p class="text-right">Total $: <span id="total"></span>;</p>
-                    
-                    <div class="controles-carrito">
-                        <button id="boton-pagar" class="btn btn-primary mt-3">Pagar</button>
-                        <button id="boton-vaciar" class="btn btn-danger mt-3">Vaciar</button>
-                    </div>
-
-                </aside>
+        <section id="banner-principal">
+            <div id="banner-inicio" class="banner">
+                <img id="banner-imagen" alt="500x500" src="" >
             </div>
-        </div>
+        </section>
+
+        <!-- Seccion presentacion -->
+        <section id="presentacion">
+            <div class="box-titulo-seccion">
+  
+                <h2 class="seccion-titulo">NUESTRA HISTORIA</h2>
+                <p class="seccion-texto">Somos productores de miel pura de abejas, nuestra especialidad es obtener
+                    una miel de calidad, aportando el 100% de pureza a nuestros productos</p>
+            </div>    
+        </section>
+        <section id="nosotros">
+            <div class="box-texto">
+             <div class="box-texto-narracion">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCAQFXJU96vRGDhDZbAuk_ZcWD3kROBpkaA&s" class="img-thumbnail" alt="...">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam, inventore maiores harum mollitia, quia magni cumque perspiciatis soluta ipsa cum consequatur quis placeat a. Deleniti similique reiciendis cumque veniam?</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7j4IMt18PYOyDEM8N4vGmQ91gMnJwTY_RA&s" class="rounded float-start" alt="...">
+            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veritatis unde ipsam perferendis hic distinctio odio fuga sint. Aperiam illum dicta cumque ex esse laborum nisi, omnis voluptatum non quisquam?</p>        
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia vel doloremque saepe, voluptate reprehenderit asperiores voluptatibus, reiciendis ratione, accusantium animi repellat odit molestias dignissimos autem dolore consequatur deleniti placeat.</p>
+            
+                
+                <img src="https://www.lahora.com.ec/wp-content/uploads/2022/03/ACTIVIDAD-2-e1647992785505.jpeg" class="rounded float-end" alt="...">
+            </div> 
+            
+               
+            </div>
+         
+        </section>
+
     </main>
     <footer class="footer">
         <div class="container-footer">
@@ -80,6 +86,7 @@
                 <h2>Nuetras redes</h2>
 
                 <hr class="line-separator">
+
                 <img id="logo-footer" src="../assets/img/honeybee-black.webp"> </img>
                 <div id="redes">
                     <ul id="redes-list">
@@ -127,7 +134,6 @@
             <p>© Copyright 2024 - Copyright - Todos los derechos reservados Leo!</p>
         </div>
     </footer>
-    <script src="../assets/js/carritodinamico.js"></script>
 </body>
 
 </html>
